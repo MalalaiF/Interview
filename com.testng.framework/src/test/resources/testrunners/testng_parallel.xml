@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite thread-count="5" name="MySuite" parallel="classes">
+<listeners>
+	<listener class-name="utilities.ExtentReportListener" />
+</listeners>
+  <test name="MyTest">
+    <classes>
+			<class name="tests.SampleTest" />
+			<!--  --><class name="tests.LoginTest"/>
+    </classes>
+  </test> <!-- MyTest -->
+</suite> <!-- MySuite -->

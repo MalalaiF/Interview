@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Hub Spot Test Sanity Suite]">
+  <listeners>
+    <listener class-name="utilities.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" verbose="3" name="hub spot Sanity Test(failed)">
+    <parameter name="date" value="12/20/2019"/>
+    <parameter name="password" value="STED2020"/>
+    <parameter name="address" value="Falls Church VA"/>
+    <parameter name="userName" value="TEKSCHOOL"/>
+    <parameter name="url" value="www.google.com"/>
+    <classes>
+      <class name="tests.TestEnvironment">
+        <methods>
+          <include name="loginToTestEnvironment"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.TestEnvironment -->
+    </classes>
+  </test> <!-- hub spot Sanity Test(failed) -->
+</suite> <!-- Failed suite [Hub Spot Test Sanity Suite] -->
